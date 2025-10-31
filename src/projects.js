@@ -2,6 +2,9 @@ import AndroidScreenShot from './assets/Woofstagram/AndroidScreenShot.png'
 import AndroidVideo from './assets/Woofstagram/androidEmulator.mp4' // Changed from .gif
 import iOSVideo from './assets/Woofstagram/iosSimulator.mp4' // Changed from .mov
 import ReactApp from './assets/ReactWebApp/ReactApp1.jpg'; // added image for react web app project
+import TipCalculatorScreenshot from './assets/TipCalculator/TipCalculatorScreenshot.png'
+import TipCalculatorVideo from './assets/TipCalculator/TipCalculatorVideo.mp4'
+
 
 export const projects = [
   {
@@ -25,5 +28,16 @@ export const projects = [
     githubUrl: 'https://github.com/jaesu968/jammming',
     liveUrl: null,
     type: 'web'
-  }
+  },
+  {
+  id: 3,
+  title: 'Tip Calculator',
+  description: 'This project is a simple yet functional Tip Calculator application for Android, built using Kotlin. It provides a user-friendly interface to quickly calculate the appropriate tip for a bill.',
+  tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Java'],
+  imageUrl: TipCalculatorScreenshot, // Used as poster for video
+  videoUrl: TipCalculatorVideo,      // Single video for web apps
+  githubUrl: 'https://github.com/jaesu968/Tip_Calculator', // Add your repo URL
+  liveUrl: null, // Add live demo URL if deployed
+  type: 'web'
+}
 ];
