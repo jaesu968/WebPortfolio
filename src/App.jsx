@@ -27,8 +27,8 @@ function App() {
       </div>
       
       <footer>
-        <p>&copy; Kyle Jaesu Akuya 2025</p>
         <ContactCard contact={{ title: 'Get In Touch', email: 'mazterk968@gmail.com' }} />
+        <p className="footer-p">&copy; {new Date().getFullYear()} Kyle Jaesu Akuya</p>
       </footer>
     </>
   )
