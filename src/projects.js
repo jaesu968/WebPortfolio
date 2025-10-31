@@ -4,6 +4,8 @@ import iOSVideo from './assets/Woofstagram/iosSimulator.mp4' // Changed from .mo
 import ReactApp from './assets/ReactWebApp/ReactApp1.jpg'; // added image for react web app project
 import TipCalculatorScreenshot from './assets/TipCalculator/TipCalculatorScreenshot.png'
 import TipCalculatorVideo from './assets/TipCalculator/TipCalculatorVideo.mp4'
+import StopwatchScreenshot from './assets/Stopwatch/StopwatchAndroid.png'
+import StopwatchVideo from './assets/Stopwatch/stopwatchVideo.mp4'
 
 
 export const projects = [
@@ -39,5 +41,16 @@ export const projects = [
   githubUrl: 'https://github.com/jaesu968/Tip_Calculator', // Add your repo URL
   liveUrl: null, // Add live demo URL if deployed
   type: 'mobile[android]'
-}
+  },
+  {
+  id: 4, 
+  title: 'Stopwatch with Productivity Timer',
+  description: 'This is a custom-built Android application that functions as a stopwatch with an added productivity feature inspired by the Pomodoro technique. The main idea is to allow users to time their work intervals and get a notification when a self-imposed time limit is reached, reminding them to take a break.',
+  tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Java'],
+  imageUrl: StopwatchScreenshot, // Used as poster for video
+  videoUrl: StopwatchVideo,       // Single video for web apps
+  githubUrl: 'https://github.com/jaesu968/Stopwatch_with_Productivity_Timer', // Add your repo URL
+  liveUrl: null, // Add live demo URL if deployed
+  type: 'mobile[android]'
+  }
 ];
