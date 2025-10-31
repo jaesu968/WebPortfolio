@@ -19,7 +19,7 @@ export const projects = [
   {
     id: 2,
     title: 'Create Playlist React Web App - Jammming',
-    description: 'A create your own playlist and save it to spotify web app. Built with React and Vite.',
+    description: 'Jammming is a web application that allows users to search for songs on Spotify and create custom playlists that are saved directly to their Spotify account. Built with React and integrated with the Spotify Web API, Jammming provides an intuitive interface for discovering and organizing music.',
     tech: ['React', 'Vite', 'CSS', 'Spotify API', 'HTML', 'JavaScript'],
     imageUrl: ReactApp, // You can use public assets too
     githubUrl: 'https://github.com/jaesu968/jammming',
