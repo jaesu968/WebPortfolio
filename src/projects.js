@@ -1,24 +1,29 @@
-import myAppScreenshot from '../assets/my-app-screenshot.png'; // Example: Add your images to the assets folder
+import AndroidScreenShot from './assets/Woofstagram/AndroidScreenShot.png'
+import AndroidVideo from './assets/Woofstagram/androidEmulator.mp4' // Changed from .gif
+import iOSVideo from './assets/Woofstagram/iosSimulator.mp4' // Changed from .mov
+import ReactApp from './assets/ReactWebApp/ReactApp1.jpg'; // added image for react web app project
 
 export const projects = [
   {
     id: 1,
-    title: 'My Awesome React Native App',
-    description: 'A social media app for sharing pictures of cute pets. Built with Expo and Firebase.',
-    tech: ['React Native', 'Expo', 'Firebase', 'React Navigation'],
-    imageUrl: myAppScreenshot, // Use the imported image
-    githubUrl: 'https://github.com/your-username/my-awesome-app',
+    title: 'Woofstagram',
+    description: 'A social media app for sharing pictures of cute dogs. Built with Expo and React Native.',
+    tech: ['React Native', 'Expo', 'React Navigation'],
+    imageUrl: AndroidScreenShot, // We can keep this as a poster/fallback
+    androidVideoUrl: AndroidVideo,
+    iosVideoUrl: iOSVideo,
+    githubUrl: 'https://github.com/jaesu968/ReactNativeProject_InstagramLikeAppComplete',
     liveUrl: null, // Or link to App/Play Store
     type: 'mobile'
   },
   {
     id: 2,
-    title: 'My Web Project',
-    description: 'A personal blog built with React and Vite.',
-    tech: ['React', 'Vite', 'CSS'],
-    imageUrl: '/vite.svg', // You can use public assets too
-    githubUrl: 'https://github.com/your-username/my-web-project',
-    liveUrl: 'https://my-web-project.com',
+    title: 'Create Playlist React Web App - Jammming',
+    description: 'A create your own playlist and save it to spotify web app. Built with React and Vite.',
+    tech: ['React', 'Vite', 'CSS', 'Spotify API', 'HTML', 'JavaScript'],
+    imageUrl: ReactApp, // You can use public assets too
+    githubUrl: 'https://github.com/jaesu968/jammming',
+    liveUrl: null,
     type: 'web'
   }
 ];

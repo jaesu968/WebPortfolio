@@ -1,10 +1,29 @@
 import React from 'react';
 
 function ProjectCard({ project }) {
+  const hasVideos = project.androidVideoUrl || project.iosVideoUrl;
+
   return (
     <div className="card">
       <h3>{project.title} ({project.type})</h3>
-      <img src={project.imageUrl} alt={project.title} style={{ width: '100%', borderRadius: '8px' }} />
+      {hasVideos ? (
+        <div className="video-container">
+          {project.iosVideoUrl && (
+            <video className="project-video" poster={project.imageUrl} autoPlay loop muted playsInline>
+              <source src={project.iosVideoUrl} type="video/mp4" /> 
+              Your browser does not support the video tag.
+            </video>
+          )}
+          {project.androidVideoUrl && (
+            <video className="project-video" poster={project.imageUrl} autoPlay loop muted playsInline>
+              <source src={project.androidVideoUrl} type="video/mp4" />
+              Your browser does not support the video tag. 
+            </video>
+          )}
+        </div>
+      ) : (
+        <img src={project.imageUrl} alt={project.title} className="project-image" />
+      )}
       <p>{project.description}</p>
       <div>
         <strong>Tech Stack:</strong> {project.tech.join(', ')}

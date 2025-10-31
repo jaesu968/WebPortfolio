@@ -1,5 +1,5 @@
 import './App.css'
-import { projects } from './data/projects.js';
+import { projects } from './projects.js';
 import ProjectCard from './components/ProjectCard.jsx';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
       {/* A brief introduction to about myself*/}
       <p>Hello Everyone. I am a web and mobile developer. 
         I have experience working with React, Node.js, ExpressJS, MongoDB,
-        Vue.js, kotlin, Java, Android Studio and React Native. 
+        Vue.js, Kotlin, Java, Android Studio and React Native. 
         I also have knowledge of HTML5, CSS3, JavaScript. 
         I am currently focusing on learning more about React Native.
         And next step will be Kotlin for more Android development.
@@ -24,6 +24,7 @@ function App() {
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
+      <footer>&copy; Kyle Jaesu Akuya 2025</footer>
     </>
   )
 }
