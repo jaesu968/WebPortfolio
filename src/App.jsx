@@ -1,6 +1,7 @@
 import './App.css'
 import { projects } from './projects.js';
 import ProjectCard from './components/ProjectCard.jsx';
+import ContactCard from './components/ContactCard.jsx';
 
 function App() {
   return (
@@ -24,7 +25,11 @@ function App() {
           <ProjectCard key={project.id} project={project} />
         ))}
       </div>
-      <footer>&copy; Kyle Jaesu Akuya 2025</footer>
+      
+      <footer>
+        <p>&copy; Kyle Jaesu Akuya 2025</p>
+        <ContactCard contact={{ title: 'Get In Touch', email: 'mazterk968@gmail.com' }} />
+      </footer>
     </>
   )
 }
