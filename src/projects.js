@@ -17,7 +17,7 @@ export const projects = [
     iosVideoUrl: iOSVideo,
     githubUrl: 'https://github.com/jaesu968/ReactNativeProject_InstagramLikeAppComplete',
     liveUrl: null, // Or link to App/Play Store
-    type: 'mobile'
+    type: 'mobile[ios/android]'
   },
   {
     id: 2,
@@ -38,6 +38,6 @@ export const projects = [
   videoUrl: TipCalculatorVideo,      // Single video for web apps
   githubUrl: 'https://github.com/jaesu968/Tip_Calculator', // Add your repo URL
   liveUrl: null, // Add live demo URL if deployed
-  type: 'web'
+  type: 'mobile[android]'
 }
 ];
