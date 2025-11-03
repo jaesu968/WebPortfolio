@@ -5,7 +5,7 @@ import ContactCard from './components/ContactCard.jsx';
 
 function App() {
   return (
-    <>
+    <main>
       <h1>Kyle Jaesu Akuya's Web Portfolio</h1>
       {/* A brief introduction to about myself*/}
       <p>Hello Everyone. I am a web and mobile developer. 
@@ -30,7 +30,7 @@ function App() {
         <ContactCard contact={{ title: 'Get In Touch', email: 'mazterk968@gmail.com' }} />
         <p className="footer-p">&copy; {new Date().getFullYear()} Kyle Jaesu Akuya</p>
       </footer>
-    </>
+    </main>
   )
 }
 

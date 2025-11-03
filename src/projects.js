@@ -1,11 +1,16 @@
-import AndroidScreenShot from './assets/Woofstagram/AndroidScreenShot.png'
-import AndroidVideo from './assets/Woofstagram/androidEmulator.mp4' // Changed from .gif
-import iOSVideo from './assets/Woofstagram/iosSimulator.mp4' // Changed from .mov
+import AndroidScreenShot from './assets/Woofstagram/AndroidScreenShot.png';
+import AndroidVideo from './assets/Woofstagram/androidEmulator.mp4'; // Changed from .gif
+import iOSVideo from './assets/Woofstagram/iosSimulator.mp4'; // Changed from .mov
 import ReactApp from './assets/ReactWebApp/ReactApp1.jpg'; // added image for react web app project
-import TipCalculatorScreenshot from './assets/TipCalculator/TipCalculatorScreenshot.png'
-import TipCalculatorVideo from './assets/TipCalculator/TipCalculatorVideo.mp4'
-import StopwatchScreenshot from './assets/Stopwatch/StopwatchAndroid.png'
-import StopwatchVideo from './assets/Stopwatch/stopwatchVideo.mp4'
+import TipCalculatorScreenshot from './assets/TipCalculator/TipCalculatorScreenshot.png';
+import TipCalculatorVideo from './assets/TipCalculator/TipCalculatorVideo.mp4';
+import StopwatchScreenshot from './assets/Stopwatch/StopwatchAndroid.png';
+import StopwatchVideo from './assets/Stopwatch/stopwatchVideo.mp4';
+import FullStackVueApp from './assets/ShoppingList/FullStackVueApp.mp4';
+import FullStackScreenshot from './assets/ShoppingList/itemList.png';
+
+// video for Vue (Full Stack project)
+
 
 
 export const projects = [
@@ -29,28 +34,39 @@ export const projects = [
     imageUrl: ReactApp, // You can use public assets too
     githubUrl: 'https://github.com/jaesu968/jammming',
     liveUrl: null,
-    type: 'web'
+    type: 'web[React]'
   },
   {
-  id: 3,
-  title: 'Tip Calculator',
-  description: 'This project is a simple yet functional Tip Calculator application for Android, built using Kotlin. It provides a user-friendly interface to quickly calculate the appropriate tip for a bill.',
-  tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Java'],
-  imageUrl: TipCalculatorScreenshot, // Used as poster for video
-  videoUrl: TipCalculatorVideo,      // Single video for web apps
-  githubUrl: 'https://github.com/jaesu968/Tip_Calculator', // Add your repo URL
-  liveUrl: null, // Add live demo URL if deployed
-  type: 'mobile[android]'
+    id: 3,
+    title: 'Tip Calculator',
+    description: 'This project is a simple yet functional Tip Calculator application for Android, built using Kotlin. It provides a user-friendly interface to quickly calculate the appropriate tip for a bill.',
+    tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Java'],
+    imageUrl: TipCalculatorScreenshot, // Used as poster for video
+    videoUrl: TipCalculatorVideo,      // Single video for web apps
+    githubUrl: 'https://github.com/jaesu968/Tip_Calculator', // Add your repo URL
+    liveUrl: null, // Add live demo URL if deployed
+    type: 'mobile[android]'
   },
   {
-  id: 4, 
-  title: 'Stopwatch with Productivity Timer',
-  description: 'This is a custom-built Android application that functions as a stopwatch with an added productivity feature inspired by the Pomodoro technique. The main idea is to allow users to time their work intervals and get a notification when a self-imposed time limit is reached, reminding them to take a break.',
-  tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Java'],
-  imageUrl: StopwatchScreenshot, // Used as poster for video
-  videoUrl: StopwatchVideo,       // Single video for web apps
-  githubUrl: 'https://github.com/jaesu968/Stopwatch_with_Productivity_Timer', // Add your repo URL
-  liveUrl: null, // Add live demo URL if deployed
-  type: 'mobile[android]'
+    id: 4, 
+    title: 'Stopwatch with Productivity Timer',
+    description: 'This is a custom-built Android application that functions as a stopwatch with an added productivity feature inspired by the Pomodoro technique. The main idea is to allow users to time their work intervals and get a notification when a self-imposed time limit is reached, reminding them to take a break.',
+    tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Java'],
+    imageUrl: StopwatchScreenshot, // Used as poster for video
+    videoUrl: StopwatchVideo,       // Single video for web apps
+    githubUrl: 'https://github.com/jaesu968/Stopwatch_with_Productivity_Timer', // Add your repo URL
+    liveUrl: null, // Add live demo URL if deployed
+    type: 'mobile[android]'
+  },
+  {
+    id: 5, 
+    title: 'Shopping List',
+    description: 'A Vue 3 shopping list management application with a dark/light mode toggle.',
+    tech: ['Vue.js', 'Express.js', 'MongoDB', 'Node.js'],
+    imageUrl: FullStackScreenshot, // Placeholder or actual image URL
+    videoUrl: FullStackVueApp, // Placeholder or actual video URL
+    githubUrl: 'https://github.com/jaesu968/shopping-list', // Add your repo URL
+    liveUrl: null, // Add live demo URL if deployed
+    type: 'web[MEVN full stack app]'
   }
 ];

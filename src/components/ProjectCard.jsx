@@ -3,6 +3,7 @@ import React from 'react';
 function ProjectCard({ project }) {
   // Check if the project has videos or an image
   const hasVideos = project.androidVideoUrl || project.iosVideoUrl || project.videoUrl;
+  const isImageArray = Array.isArray(project.imageUrl);
 
   return (
     <div className="card">
@@ -27,6 +28,17 @@ function ProjectCard({ project }) {
               Your browser does not support the video tag.
             </video>
           )}
+        </div>
+      ) : isImageArray ? (
+        <div className="image-gallery">
+          {project.imageUrl.map((image, index) => (
+            <img
+              key={`${project.id}-image-${index}`}
+              src={image}
+              alt={`${project.title} screenshot ${index + 1}`}
+              className="project-image"
+            />
+          ))}
         </div>
       ) : (
         <img src={project.imageUrl} alt={project.title} className="project-image" />
