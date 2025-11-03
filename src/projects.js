@@ -8,6 +8,7 @@ import StopwatchScreenshot from './assets/Stopwatch/StopwatchAndroid.png';
 import StopwatchVideo from './assets/Stopwatch/stopwatchVideo.mp4';
 import FullStackVueApp from './assets/ShoppingList/FullStackVueApp.mp4';
 import FullStackScreenshot from './assets/ShoppingList/itemList.png';
+import calculatorScreenshot from './assets/JavaCalculator/calculator.jpg'; // Added screenshot for java calculator project
 
 // video for Vue (Full Stack project)
 
@@ -68,5 +69,16 @@ export const projects = [
     githubUrl: 'https://github.com/jaesu968/shopping-list', // Add your repo URL
     liveUrl: null, // Add live demo URL if deployed
     type: 'web[MEVN full stack app]'
+  },
+  {
+    id: 6, 
+    title: 'Java Calculator',
+    description: 'A simple calculator app made using Java.',
+    tech: ['Java', 'JavaFX'],
+    imageUrl: calculatorScreenshot, // Placeholder or actual image URL
+    videoUrl: '', // Placeholder or actual video URL
+    githubUrl: 'https://github.com/jaesu968/calculator', // Add your repo URL
+    liveUrl: null, // Add live demo URL if deployed
+    type: 'desktop[java]'
   }
 ];
