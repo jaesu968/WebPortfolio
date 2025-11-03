@@ -8,12 +8,13 @@ function App() {
     <main>
       <h1>Kyle Jaesu Akuya's Web Portfolio</h1>
       {/* A brief introduction to about myself*/}
-      <p>Hello Everyone. I am a web and mobile developer. 
+      <p>Hello Everyone. Welcome to my Web Portfolio.</p>
+      <p>I am a web and mobile developer. 
         I have experience working with React, Node.js, ExpressJS, MongoDB,
         Vue.js, Kotlin, Java, Android Studio and React Native. 
         I also have knowledge of HTML5, CSS3, JavaScript. 
         I am currently focusing on learning more about React Native.
-        And next step will be Kotlin for more Android development.
+        And next step will be a deeper dive into Kotlin for more Android development.
         Feel free to contact me if you need any help or want to work together.
         Thank You!
       </p>

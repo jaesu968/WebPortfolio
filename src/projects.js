@@ -6,12 +6,12 @@ import TipCalculatorScreenshot from './assets/TipCalculator/TipCalculatorScreens
 import TipCalculatorVideo from './assets/TipCalculator/TipCalculatorVideo.mp4';
 import StopwatchScreenshot from './assets/Stopwatch/StopwatchAndroid.png';
 import StopwatchVideo from './assets/Stopwatch/stopwatchVideo.mp4';
-import FullStackVueApp from './assets/ShoppingList/FullStackVueApp.mp4';
+import FullStackVueApp from './assets/ShoppingList/FullStackVueApp.mp4'; // Video for MEVN full stack project
 import FullStackScreenshot from './assets/ShoppingList/itemList.png';
 import calculatorScreenshot from './assets/JavaCalculator/calculator.jpg'; // Added screenshot for java calculator project
 import oldSchoolForums from './assets/OldSchoolForums/website.mp4'; // added video to show project from intro to web dev class
+import JavaQuizMaster from './assets/JavaQuizMaster/JavaQuizMaster.jpg'; // added screenshot of Java project from Intro to Programming Class
 
-// video for Vue (Full Stack project)
 
 
 
@@ -92,5 +92,16 @@ export const projects = [
     githubUrl: 'https://github.com/jaesu968/Final-Project',
     liveUrl: null, // Add live demo URL if deployed
     type: 'web[HTML/CSS/JS]'
+  },
+  {
+    id: 8, 
+    title: 'Java Quiz Master',
+    description: 'Quiz Master is a console-based Java application that allows users to both manage a collection of quiz questions and take quizzes. It features a persistent storage system, saving all questions to a local text file (`QuizQuestions.txt`).',
+    tech: ['Java'],
+    imageUrl: JavaQuizMaster, // Placeholder or actual image URL
+    videoUrl: '', // Placeholder or actual video URL
+    githubUrl: 'https://github.com/jaesu968/QuizMaster',
+    liveUrl: null, // add live demo URL if deployed
+    type: 'desktop[java]'
   }
 ];
