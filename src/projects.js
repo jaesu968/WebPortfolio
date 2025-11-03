@@ -2,6 +2,7 @@ import AndroidScreenShot from './assets/Woofstagram/AndroidScreenShot.png';
 import AndroidVideo from './assets/Woofstagram/androidEmulator.mp4'; // Changed from .gif
 import iOSVideo from './assets/Woofstagram/iosSimulator.mp4'; // Changed from .mov
 import ReactApp from './assets/ReactWebApp/ReactApp1.jpg'; // added image for react web app project
+import ReactWebAppVideo from './assets/ReactWebApp/jammmingReactWebApp.mp4'; // added video for react web app project
 import TipCalculatorScreenshot from './assets/TipCalculator/TipCalculatorScreenshot.png';
 import TipCalculatorVideo from './assets/TipCalculator/TipCalculatorVideo.mp4';
 import StopwatchScreenshot from './assets/Stopwatch/StopwatchAndroid.png';
@@ -33,7 +34,8 @@ export const projects = [
     title: 'Create Playlist React Web App - Jammming',
     description: 'Jammming is a web application that allows users to search for songs on Spotify and create custom playlists that are saved directly to their Spotify account. Built with React and integrated with the Spotify Web API, Jammming provides an intuitive interface for discovering and organizing music.',
     tech: ['React', 'Vite', 'CSS', 'Spotify API', 'HTML', 'JavaScript'],
-    imageUrl: ReactApp, // You can use public assets too
+    imageUrl: ReactApp, // You can use public assets too,
+    videoUrl: ReactWebAppVideo, // Video to display the React Web App 
     githubUrl: 'https://github.com/jaesu968/jammming',
     liveUrl: null,
     type: 'web[React]'
