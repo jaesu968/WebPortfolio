@@ -41,6 +41,11 @@
   color: #888;
 }
 
+/* 
+  This sets up a CSS Grid layout for the projects.
+  - `grid-template-columns: repeat(2, 1fr)` creates a two-column grid where each column takes up an equal fraction (1fr) of the available space.
+  - `gap` adds space between the grid items.
+*/
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -48,6 +53,10 @@
   text-align: left;
 }
 
+/*
+  This is a media query for responsive design.
+  On screens with a width of 768px or less (like tablets and phones), the grid will switch to a single column layout.
+*/
 @media (max-width: 768px) {
   .project-grid {
     grid-template-columns: repeat(1, 1fr);
@@ -107,4 +116,3 @@ footer {
   font-size: 0.9rem;
   color: #888;
 }
-
