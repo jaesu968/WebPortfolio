@@ -10,6 +10,11 @@ function ProjectCard({ project, onMediaClick }) {
   // Check if the project has videos or an image
   const hasVideos = project.androidVideoUrl || project.iosVideoUrl || project.videoUrl;
   const isImageArray = Array.isArray(project.imageUrl);
+  const videoItems = [
+    { url: project.videoUrl, label: `${project.title} demo video` },
+    { url: project.iosVideoUrl, label: `${project.title} iOS demo video` },
+    { url: project.androidVideoUrl, label: `${project.title} Android demo video` },
+  ].filter((item) => item.url);
 
   return (
     <div className="card">
@@ -20,50 +25,64 @@ function ProjectCard({ project, onMediaClick }) {
         - Otherwise, it checks if `isImageArray` is true to render a gallery, or falls back to a single image.
       */}
       {hasVideos ? (
-        <div className="video-container" style={{ cursor: 'pointer' }}>
-          {project.videoUrl && (
-            <video onClick={() => onMediaClick(project.videoUrl, project.title)} className="project-video" poster={project.imageUrl} autoPlay loop muted playsInline title={`Click to enlarge ${project.title} video`}>
-              <source src={project.videoUrl} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          )}
-          {project.iosVideoUrl && (
-            <video onClick={() => onMediaClick(project.iosVideoUrl, project.title)} className="project-video" poster={project.imageUrl} autoPlay loop muted playsInline title={`Click to enlarge ${project.title} video`}>
-              <source src={project.iosVideoUrl} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          )}
-          {project.androidVideoUrl && (
-            <video onClick={() => onMediaClick(project.androidVideoUrl, project.title)} className="project-video" poster={project.imageUrl} autoPlay loop muted playsInline title={`Click to enlarge ${project.title} video`}>
-              <source src={project.androidVideoUrl} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          )}
+        <div className="video-container">
+          {videoItems.map((video) => (
+            <button
+              key={`${project.id}-${video.url}`}
+              type="button"
+              className="media-trigger"
+              onClick={() => onMediaClick(video.url, project.title)}
+              aria-label={`Open ${video.label} in modal`}
+              title={`Open ${video.label}`}
+            >
+              <video className="project-video" poster={project.imageUrl} loop muted playsInline preload="metadata">
+                <source src={video.url} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </button>
+          ))}
         </div>
       ) : isImageArray ? (
-        <div className="image-gallery" style={{ cursor: 'pointer' }} title={`Click to enlarge images for ${project.title}`}>
+        <div className="image-gallery" title={`Click to enlarge images for ${project.title}`}>
           {project.imageUrl.map((image, index) => (
-            <img
-              onClick={() => onMediaClick(image, project.title)}
+            <button
               key={`${project.id}-image-${index}`}
-              src={image}
-              alt={`${project.title} screenshot ${index + 1}`}
-              className="project-image"
-            />
+              type="button"
+              className="media-trigger"
+              onClick={() => onMediaClick(image, project.title)}
+              aria-label={`Open ${project.title} screenshot ${index + 1} in modal`}
+              title={`Open ${project.title} screenshot ${index + 1}`}
+            >
+              <img
+                src={image}
+                alt={`${project.title} screenshot ${index + 1}`}
+                className="project-image"
+              />
+            </button>
           ))}
         </div>
       ) : (
-        project.imageUrl && <img onClick={() => onMediaClick(project.imageUrl, project.title)} src={project.imageUrl} alt={project.title} className="project-image" style={{ cursor: 'pointer' }} title={`Click to enlarge image for ${project.title}`} />
+        project.imageUrl && (
+          <button
+            type="button"
+            className="media-trigger"
+            onClick={() => onMediaClick(project.imageUrl, project.title)}
+            aria-label={`Open ${project.title} image in modal`}
+            title={`Open ${project.title} image`}
+          >
+            <img src={project.imageUrl} alt={project.title} className="project-image" />
+          </button>
+        )
       )}
 
       <p>{project.description}</p>
       <div>
         <strong>Tech Stack:</strong> {project.tech.join(', ')}
       </div>
-      <div style={{ marginTop: '1rem' }}>
+      <div className="project-links">
         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">View Code</a>
         {project.liveUrl && (
-          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" style={{ marginLeft: '1rem' }}>Live Demo</a>
+          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="live-demo-link">Live Demo</a>
         )}
       </div>
     </div>

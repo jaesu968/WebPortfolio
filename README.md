@@ -1,16 +1,92 @@
-# React + Vite
+# Kyle Jaesu Akuya Web Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio built with React and Vite to showcase web, mobile, and desktop projects.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React 19
+- Vite
+- JavaScript (JSX)
+- CSS
+- ESLint
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Intro/about section
+- Project grid with tech stack details
+- Media preview support (images and videos)
+- Click-to-open modal for enlarged media
+- Contact section with email and GitHub profile
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+.
+├── index.html
+├── eslint.config.js
+├── package.json
+├── vite.config.js
+├── public/
+└── src/
+    ├── App.jsx
+    ├── App.css
+    ├── index.css
+    ├── main.jsx
+    ├── projects.js
+    ├── assets/
+    │   ├── JavaCalculator/
+    │   ├── JavaQuizMaster/
+    │   ├── OldSchoolForums/
+    │   ├── ReactWebApp/
+    │   ├── ShoppingList/
+    │   ├── Stopwatch/
+    │   ├── TipCalculator/
+    │   └── Woofstagram/
+    └── components/
+        ├── ContactCard.jsx
+        ├── Modal.jsx
+        ├── Modal.css
+        └── ProjectCard.jsx
+```
+
+## Local Development
+
+1. Install dependencies:
+
+```bash
+npm install
+```
+
+2. Start the dev server:
+
+```bash
+npm run dev
+```
+
+3. Open the local URL shown in terminal (typically `http://localhost:5173/WebPortfolio/`).
+
+## Available Scripts
+
+- `npm run dev` - start local development server
+- `npm run build` - create production build in `dist/`
+- `npm run preview` - preview the production build locally
+- `npm run lint` - run ESLint checks
+- `npm run deploy` - deploy `dist/` to GitHub Pages (uses `gh-pages`)
+
+## Deployment
+
+This project is configured for GitHub Pages using:
+
+- `vite.config.js` with `base: "/WebPortfolio/"`
+- `package.json` deploy scripts (`predeploy`, `deploy`)
+
+Deploy with:
+
+```bash
+npm run deploy
+```
+
+## Notes
+
+- Project data is managed in `src/projects.js`.
+- Modal behavior and accessibility are implemented in `src/components/Modal.jsx`.

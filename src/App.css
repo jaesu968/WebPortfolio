@@ -72,6 +72,24 @@
   background-color: #333; /* A fallback color while images load */
 }
 
+.media-trigger {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  width: 100%;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.media-trigger:focus {
+  outline: none;
+}
+
+.media-trigger:focus-visible {
+  box-shadow: 0 0 0 3px #ffffff;
+}
+
 .video-container {
   display: flex;
   justify-content: center;
@@ -97,6 +115,14 @@
 .image-gallery .project-image {
   height: 150px; /* Smaller height for gallery images */
   margin-bottom: 0; /* Remove individual margin since gallery has gap */
+}
+
+.project-links {
+  margin-top: 1rem;
+}
+
+.live-demo-link {
+  margin-left: 1rem;
 }
 
 .contact-card {
