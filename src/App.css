@@ -2,7 +2,29 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+}
+/* page shell to contain the entire page content and footer, allowing for a sticky footer layout */
+.page-shell {
+  min-height: 100vh; /* Ensure the page shell takes up at least the full viewport height */
+  display: grid; 
+  grid-template-rows: 1fr auto; /* Main content takes up remaining space, footer takes up auto height */
+}
+/* two-column layout, sidebar narrow and main content wide */ 
+.layout {
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr); /* Sidebar fixed at 280px, main content takes remaining space */
+  gap: 2rem;
+}
+/* main content column styling */
+.content-column {
+  flex: 3; /* Main content takes up more space */
+  text-align: left;
+}
+.site-footer {
+  grid-column: 1 / -1; /* Make footer span both columns */
+  width: 100%; 
+  border-top: 1px solid #444; 
+  padding-top: 1.25rem; 
 }
 
 .logo {
@@ -141,4 +163,14 @@ footer {
   margin: 1rem 0;
   font-size: 0.9rem;
   color: #888;
+}
+
+@media (max-width: 768px) {
+  /* on small screens, collapse the two-column layout into a single vertical stack */
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .site-footer {
+    grid-column: 1;
+  }
 }

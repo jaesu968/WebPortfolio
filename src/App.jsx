@@ -5,6 +5,8 @@ import ProjectCard from './components/ProjectCard.jsx';
 import ContactCard from './components/ContactCard.jsx';
 import Modal from './components/Modal.jsx';
 import Resume from './components/Resume.jsx'; // Importing the Resume component
+import Sidebar from './components/Sidebar/Sidebar.jsx'; // Importing the Sidebar component
+import Experience from './components/Experience/Experience.jsx'; // Importing the Experience component
 
 /**
  * The main application component.
@@ -32,22 +34,32 @@ function App() {
   const closeModal = () => setModalContent(null);
 
   return (
-    <main>
-      <h1>Kyle Jaesu Akuya's Web Portfolio</h1>
-      {/* A brief introduction to about myself*/}
-      <p>Hello Everyone. Welcome to my Web Portfolio.</p>
-      <p>I am a web and mobile developer. 
-        I have experience working with React, Node.js, ExpressJS, MongoDB,
-        Vue.js, Kotlin, Java, Android Studio and React Native. 
-        I also have knowledge of HTML5, CSS3, JavaScript. 
-        I am currently focusing on learning more about React Native.
-        And next step will be a deeper dive into Kotlin for more Android development.
-        Feel free to contact me if you need any help or want to work together.
-        Thank You!
-      </p>
+    <div className="page-shell">
+    <div className="layout">
+    {/* The Sidebar is going to be the left hand column of the portfolio, and the main content will be on the right. */}
+      <Sidebar /> 
+      <main className="content-column">
+        <div id="about"> 
+          <h1>About Me</h1> 
+          <p>Hello Everyone. Welcome to my Web Portfolio.</p>
+          <p>I am a web and mobile developer. 
+            I have experience working with React, Node.js, ExpressJS, MongoDB,
+            Vue.js, Kotlin, Java, Android Studio and React Native. 
+            I also have knowledge of HTML5, CSS3, JavaScript. 
+            I recently completed the Android Development with Kotlin certificate from Hyperskill. 
+            And my next step will be to learn Jetpack Compose for modern Android development and perhaps Flutter.
+            Feel free to contact me if you need any help or want to work together.
+            Thank You!
+          </p>
+      </div>
 
-      <h2>Projects</h2>
-      <p>Here are some of the projects I've worked on.</p>
+      <div id="experience">
+        <Experience /> {/* Rendering the Experience component to display the experience section */}
+      </div>
+      
+      <div id="projects">
+      <h1>Projects</h1>
+      <h4>Click on the images to see demos or make the images bigger.</h4>
       
       {/* This is where the list of projects is rendered. */}
       <div className="project-grid">
@@ -72,14 +84,18 @@ function App() {
         mediaUrl={modalContent?.url}
         title={modalContent?.title}
       />
+      </div>
 
       <Resume /> {/* Rendering the Resume component to display the resume section */}
 
-      <footer>
+    </main>
+    </div>
+    <footer className="site-footer">
         <ContactCard contact={{ title: 'Get In Touch', email: 'mazterk968@gmail.com' }} />
         <p className="footer-p">&copy; {new Date().getFullYear()} Kyle Jaesu Akuya</p>
       </footer>
-    </main>
+
+    </div>
   )
 }
 

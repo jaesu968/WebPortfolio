@@ -1,0 +1,20 @@
+/* styling for experience component */ 
+
+.experience {
+        color: #ffffff; /* Text color */
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+.experience h2 {
+        margin-bottom: 10px;
+    }   
+.experience-item {
+        margin-bottom: 20px;
+    }   
+.experience-item h3 {
+        margin-bottom: 5px;
+    }   
+.experience-item ul {
+        list-style: disc; 
+    }

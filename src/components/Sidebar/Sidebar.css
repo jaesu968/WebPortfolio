@@ -1,0 +1,33 @@
+/* Styling for Sidebar component */ 
+
+/* navbar styling */ 
+.sidebar-nav {
+  list-style-type: none; 
+}
+
+.sidebar-nav a:hover {
+  color: #9fa3e5aa; /* Add a hover effect to the navigation links */
+}
+.sidebar-nav a:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color; /* Add a focus style for accessibility */
+}
+.social-links-list {
+    list-style-type: none; 
+}
+
+.sidebar {
+    text-align: left;
+    margin-right: 2rem;
+    flex: 1;
+    max-width: 300px;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    max-width: 100%;
+    margin-right: 0;
+  }
+}
