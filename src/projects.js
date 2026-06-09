@@ -12,6 +12,8 @@ import FullStackScreenshot from './assets/ShoppingList/itemList.png';
 import calculatorScreenshot from './assets/JavaCalculator/calculator.jpg'; // Added screenshot for java calculator project
 import oldSchoolForums from './assets/OldSchoolForums/website.mp4'; // added video to show project from intro to web dev class
 import JavaQuizMaster from './assets/JavaQuizMaster/JavaQuizMaster.jpg'; // added screenshot of Java project from Intro to Programming Class
+import PhotoEditor from './assets/PhotoEditorApp/PhotoEditorAndroidAppScreenRecording.mp4'; // added video for photo editor app project
+import MusicPlayer from './assets/MusicPlayerApp/MusicPlayerAndroidAppScreenRecording.mp4'; // added video for music player app project 
 
 
 
@@ -105,5 +107,27 @@ export const projects = [
     githubUrl: 'https://github.com/jaesu968/QuizMaster',
     liveUrl: null, // add live demo URL if deployed
     type: 'desktop[java]'
+  },
+  {
+    id: 9, 
+    title: 'Photo Editor App',
+    description: 'A mobile photo editing Android application built with Kotlin, offering a variety of filters and editing tools for users to enhance their photos on the go.',
+    tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Java', 'SQLite'],
+    imageUrl: '', // Placeholder or actual image URL
+    videoUrl: PhotoEditor, // Placeholder or actual video URL
+    githubUrl: 'https://github.com/jaesu968/PhotoEditorAndroidApp',
+    liveUrl: null, // add live demo URL if deployed
+    type: 'mobile[android]'
+  },
+  {
+    id: 10, 
+    title: 'Music Player App',
+    description: 'A mobile music player Android application built with Kotlin, allowing users to play their local music files with a simple and intuitive interface.',
+    tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Kotlin Coroutines', 'Java'],
+    imageUrl: '', // Placeholder or actual image URL
+    videoUrl: MusicPlayer, // Placeholder or actual video URL
+    githubUrl: 'https://github.com/jaesu968/MusicPlayerAndroidApp',
+    liveUrl: null, // add live demo URL if deployed
+    type: 'mobile[android]'
   }
 ];

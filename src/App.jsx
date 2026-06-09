@@ -4,6 +4,7 @@ import { projects } from './projects.js';
 import ProjectCard from './components/ProjectCard.jsx';
 import ContactCard from './components/ContactCard.jsx';
 import Modal from './components/Modal.jsx';
+import Resume from './components/Resume.jsx'; // Importing the Resume component
 
 /**
  * The main application component.
@@ -45,6 +46,7 @@ function App() {
         Thank You!
       </p>
 
+      <h2>Projects</h2>
       <p>Here are some of the projects I've worked on.</p>
       
       {/* This is where the list of projects is rendered. */}
@@ -70,6 +72,8 @@ function App() {
         mediaUrl={modalContent?.url}
         title={modalContent?.title}
       />
+
+      <Resume /> {/* Rendering the Resume component to display the resume section */}
 
       <footer>
         <ContactCard contact={{ title: 'Get In Touch', email: 'mazterk968@gmail.com' }} />
