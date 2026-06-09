@@ -1,0 +1,118 @@
+/* Styling for Sidebar component */ 
+
+/* navbar styling */ 
+
+/* nav reset */ 
+.sidebar-nav, .social-links-list {
+  list-style-type: none; 
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+/* vertical spacing for nav items */ 
+.sidebar-nav li + li {
+  margin-top: 0.75rem; /* Add vertical spacing between nav items */
+}
+
+/* leading line nav links */ 
+.nav-link {
+  position: relative; /* Establish a positioning context for the pseudo-element */
+  display: inline-block; /* Allow the link to size based on its content */
+  padding-left: 1.6rem; /* Add enough spacing so active line never crowds the text */
+  color: inherit; /* Inherit text color from parent */
+  text-decoration: none; /* Remove default underline */
+  font-weight: 500; /* Slightly bolder text for better readability */
+  transition: color 180ms ease; /* Add a smooth transition for hover effect */
+}
+
+.nav-link::before {
+  content: ""; /* Create an empty pseudo-element */
+  position: absolute; /* Position it absolutely within the link */
+  left: 0; /* Align it to the left edge f the link */
+  top: 50%; /* Vertically center it */
+  width: 0.65rem; /* Set the width of the leading line */
+  height: 1px; /* Set the height of the leading line */
+  background: currentColor; /* Use the current text color for the line */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  opacity: 0.45; /* Set initial opacity for a subtle effect */
+  transition: width 180ms ease, opacity 180ms ease; /* Add transitions for width and opacity */
+}
+
+.nav-link:hover::before, .nav-link:focus-visible::before {
+  width: 1.05rem; /* Slightly expand on hover/focus */
+  opacity: 1; /* Increase opacity for better visibility */
+
+}
+
+.nav-link.active {
+  color: #c1c5ff;
+}
+
+.nav-link.active::before {
+  width: 1.35rem; /* Keep active section line visibly longer without overlapping text */
+  opacity: 1;
+}
+
+.nav-link:focus-visible {
+  outline: 2px solid #9fa3e5aa; /* Add a visible outline for keyboard focus */
+  outline-offset: 4px; /* Add space between the outline and the element */
+  border-radius: 4px; /* Optional: Add rounded corners to the focus outline */
+}
+
+/* social icons row */ 
+.social-links {
+  margin-top: 1.5rem; /* Add spacing above the social links */
+}
+
+.social-links-list {
+  display: flex; /* Use flexbox to arrange icons in a row */
+  gap: 0.75rem; /* Add spacing between icons */
+}
+
+.social-links-list a {
+  width: 2.25rem; /* Set a fixed width for the icons */
+  height: 2.25rem; /* Set a fixed height for the icons */
+  display: inline-flex; /* Use inline-flex to center the icons */
+  align-items: center; /* Vertically center the icons */
+  justify-content: center; /* Horizontally center the icons */
+  border: 1px solid rgba(255, 255, 255, 0.25); /* Add a subtle border around the icons */
+  border-radius: 999px; /* Make the icons circular */
+  color: inherit; /* Inherit text color for the icons */
+  text-decoration: none; /* Remove default underline */
+  font-size: 1.1rem; /* Set a slightly larger font size for better visibility */
+  transition: transform 150ms ease, border-color 150ms ease, color 150ms ease;  /* Add transitions */ 
+}
+
+.social-links-list a:hover {
+  transform: translateY(-2px); /* Slightly lift the icon on hover */
+  border-color: #9fa3e5aa; /* Change border color to indicate on hover */
+  color: #9fa3e5aa; /* Change icon color on hover for better visibility */
+}
+
+.social-links-list a:focus-visible {
+  outline: 2px solid #9fa3e5aa; /* Add a visible outline for keyboard focus */
+  outline-offset: 4px; /* Add space between the outline and the element */
+}
+
+
+.sidebar {
+    text-align: left;
+    margin-right: 2rem;
+    flex: 1;
+    max-width: 300px;
+    position: sticky;
+    top: 2rem;
+    align-self: start;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 768px) {
+  .sidebar {
+    max-width: 100%;
+    margin-right: 0;
+    position: static;
+    top: auto;
+  }
+}
