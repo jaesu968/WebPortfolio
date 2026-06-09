@@ -27,6 +27,10 @@
   padding-top: 1.25rem; 
 }
 
+.centerTitle{
+  text-align: center;
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

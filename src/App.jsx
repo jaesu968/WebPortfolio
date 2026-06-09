@@ -40,7 +40,7 @@ function App() {
       <Sidebar /> 
       <main className="content-column">
         <div id="about"> 
-          <h1>About Me</h1> 
+          <h1 className="centerTitle">About Me</h1> 
           <p>Hello Everyone. Welcome to my Web Portfolio.</p>
           <p>I am a web and mobile developer. 
             I have experience working with React, Node.js, ExpressJS, MongoDB,
@@ -58,7 +58,7 @@ function App() {
       </div>
       
       <div id="projects">
-      <h1>Projects</h1>
+      <h1 className="centerTitle">Projects</h1>
       <h4>Click on the images to see demos or make the images bigger.</h4>
       
       {/* This is where the list of projects is rendered. */}
