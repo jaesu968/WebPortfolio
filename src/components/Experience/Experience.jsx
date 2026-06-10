@@ -7,6 +7,7 @@ const Experience = () => {
             <h1>Experience</h1>
             <div className="experience-item">
                 <h3>ID Card IT Customer Support Specialist</h3>
+                <h4>Northwestern University</h4>
                 <p><strong>Aug. 2024 - Present</strong></p>
                     <ul>
                         <li> Maintains operational integrity of high-availability software/hardware infrastructure for university access control and identity card production.</li>
