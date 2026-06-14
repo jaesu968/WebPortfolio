@@ -1,5 +1,5 @@
 import React from 'react';
-import resumePdf from '../assets/Resume/KJA_AndroidDevResumeJune2026.pdf';
+import resumePdf from '../assets/Resume/KJA_AndroidDevResumeJune2026Updated.pdf';
 
 
 const Resume = () => {
