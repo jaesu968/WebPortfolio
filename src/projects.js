@@ -14,6 +14,8 @@ import oldSchoolForums from './assets/OldSchoolForums/website.mp4'; // added vid
 import JavaQuizMaster from './assets/JavaQuizMaster/JavaQuizMaster.jpg'; // added screenshot of Java project from Intro to Programming Class
 import PhotoEditor from './assets/PhotoEditorApp/PhotoEditorAndroidAppScreenRecording.mp4'; // added video for photo editor app project
 import MusicPlayer from './assets/MusicPlayerApp/MusicPlayerAndroidAppScreenRecording.mp4'; // added video for music player app project 
+import RedditMiniDesktop from './assets/RedditMini/DesktopScreenshotRedditMini.jpg'; // added screenshot for Reddit Mini desktop Java project
+import RedditMiniMobile from './assets/RedditMini/SmallScreen_Screenshot_RedditMini.jpg'; // added screenshot for Reddit Mini mobile Java project
 
 
 
@@ -81,7 +83,7 @@ export const projects = [
     description: 'A simple calculator app made using Java.',
     tech: ['Java', 'JavaFX'],
     imageUrl: calculatorScreenshot, // Placeholder or actual image URL
-    videoUrl: '', // Placeholder or actual video URL
+    videoUrl: null, // no video for this project, just an image
     githubUrl: 'https://github.com/jaesu968/calculator', // Add your repo URL
     liveUrl: null, // Add live demo URL if deployed
     type: 'desktop[java]'
@@ -103,7 +105,7 @@ export const projects = [
     description: 'Quiz Master is a console-based Java application that allows users to both manage a collection of quiz questions and take quizzes. It features a persistent storage system, saving all questions to a local text file (`QuizQuestions.txt`).',
     tech: ['Java'],
     imageUrl: JavaQuizMaster, // Placeholder or actual image URL
-    videoUrl: '', // Placeholder or actual video URL
+    videoUrl: null, // no video for this project, just an image
     githubUrl: 'https://github.com/jaesu968/QuizMaster',
     liveUrl: null, // add live demo URL if deployed
     type: 'desktop[java]'
@@ -129,5 +131,16 @@ export const projects = [
     githubUrl: 'https://github.com/jaesu968/MusicPlayerAndroidApp',
     liveUrl: null, // add live demo URL if deployed
     type: 'mobile[android]'
+  },
+  {
+    id: 11, 
+    title: 'Reddit Mini',
+    description: `A Reddit-style client built with React, Vite, Redux Toolkit, React Router, and Bootstrap. Browse Reddit's popular posts, explore subreddits, read comments, and search content — all in a responsive, animated UI.`,
+    tech: ['React', 'Vite', 'CSS', 'HTML', 'JavaScript'],
+    imageUrl: [RedditMiniDesktop, RedditMiniMobile], // images for desktop and mobile views
+    videoUrl: null, // no video for this project, just images
+    githubUrl: 'https://github.com/jaesu968/my-reddit-app',
+    liveUrl: null, // add live demo URL if deployed
+    type: 'web[React]'
   }
 ];
