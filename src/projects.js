@@ -6,7 +6,7 @@ import ReactWebAppVideo from './assets/ReactWebApp/jammmingReactWebApp.mp4'; // 
 import TipCalculatorScreenshot from './assets/TipCalculator/TipCalculatorScreenshot.png';
 import TipCalculatorVideo from './assets/TipCalculator/TipCalculatorVideo.mp4';
 import StopwatchScreenshot from './assets/Stopwatch/StopwatchAndroid.png';
-import StopwatchVideo from './assets/Stopwatch/stopwatchVideo.mp4';
+import StopwatchVideo from './assets/Stopwatch/StopwatchVideo.mp4';
 import FullStackVueApp from './assets/ShoppingList/FullStackVueApp.mp4'; // Video for MEVN full stack project
 import FullStackScreenshot from './assets/ShoppingList/itemList.png';
 import calculatorScreenshot from './assets/JavaCalculator/calculator.jpg'; // Added screenshot for java calculator project
