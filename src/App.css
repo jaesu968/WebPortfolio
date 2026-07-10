@@ -113,7 +113,7 @@
 }
 
 .media-trigger:focus-visible {
-  box-shadow: 0 0 0 3px vard(--focus-ring); 
+  box-shadow: 0 0 0 3px var(--focus-ring); 
 }
 
 .video-container {

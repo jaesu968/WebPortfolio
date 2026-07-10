@@ -44,7 +44,7 @@
 }
 
 .nav-link.active {
-  color: #c1c5ff;
+  color: var(--nav-active);
 }
 
 .nav-link.active::before {
@@ -74,7 +74,7 @@
   display: inline-flex; /* Use inline-flex to center the icons */
   align-items: center; /* Vertically center the icons */
   justify-content: center; /* Horizontally center the icons */
-  border: 1px solid rgba(255, 255, 255, 0.25); /* Add a subtle border around the icons */
+  border: 1px solid var(--border); /* Add a subtle border around the icons */
   border-radius: 999px; /* Make the icons circular */
   color: inherit; /* Inherit text color for the icons */
   text-decoration: none; /* Remove default underline */
@@ -115,4 +115,16 @@
     position: static;
     top: auto;
   }
+}
+
+.theme-toggle {
+  display: inline-flex; /* make the button a flex container */
+  align-items: center; 
+  justify-content: center; 
+  padding: 0.5em; 
+  border-radius: 50%; 
+  background-color: var(--btn-bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  cursor: pointer; 
 }

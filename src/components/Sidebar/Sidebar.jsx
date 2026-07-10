@@ -3,6 +3,7 @@ import './Sidebar.css'; // Importing the CSS file for styling the Sidebar compon
 import { FaLinkedinIn } from 'react-icons/fa6';
 import { FaGithub } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
+import ThemeToggle from '../ThemeToggle.jsx';
 
 // this component is for the sidebar content 
 // so Name, Current Job Title, and one sentence about myself, 
@@ -71,6 +72,7 @@ const Sidebar = () => {
         <aside className="sidebar">
             <h1>Kyle Jaesu Akuya</h1>
             <h2>Web and Mobile Developer</h2>
+            <ThemeToggle />
             <p>Passionate about creating intuitive and responsive web and mobile applications.</p>
             <nav>
                 <ul className="sidebar-nav">

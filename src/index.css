@@ -20,10 +20,11 @@
   --link: #646cff; /* link color */
   --link-hover: #535bf2; /* link hover color */
   --focus-ring: #ffffff; /* focus ring color */
+  --nav-active: #c1c5ff; /* active nav link color */
 
-  color-scheme: dark; 
+  color-scheme: dark;
   color: var(--text);
-  background-color: var(-bg); 
+  background-color: var(--bg); 
 }
 
 /* Light Theme */ 
@@ -38,8 +39,9 @@
   --link: #646cff; /* link color */
   --link-hover: #747bff; /* link hover color */
   --focus-ring: #213547; /* focus ring color */
+  --nav-active: #3f46c4; /* active nav link color (darker for light bg) */
 
-  color-scheme: light; 
+  color-scheme: light;
 }
 
 /* update link styles */ 
