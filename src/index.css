@@ -1,30 +1,64 @@
+/* add global styling with design token */ 
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  line-height: 1.5; 
+  font-weight: 400; 
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  font-synthesis: none; /* disable font smoothing */
+  text-rendering: optimizeLegibility; /* optimize text rendering */
+  -webkit-font-smoothing: antialiased; /* apply antialiasing */
+  -moz-osx-font-smoothing: grayscale; /* apply grayscale smoothing */
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  /* Dark Theme (default) */ 
+  --bg: #242424; 
+  --text: rgba(255, 255, 255, 0.87);
+  --text-strong: #ffffff;
+  --surface: #333333; /*image/video placholder bg */ 
+  --border: #444444; /*border color */
+  --muted: #888888; /* muted text color */
+  --btn-bg: #1a1a1a; /* button bg */
+  --link: #646cff; /* link color */
+  --link-hover: #535bf2; /* link hover color */
+  --focus-ring: #ffffff; /* focus ring color */
+
+  color-scheme: dark; 
+  color: var(--text);
+  background-color: var(-bg); 
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+/* Light Theme */ 
+:root[data-theme="light"] {
+  --bg: #ffffff;  /* Light Theme */
+  --text: #213547; 
+  --text-strong: #213547; 
+  --surface: #ececec; /*image/video placholder bg */
+  --border: #d0d0d0; /*border color */
+  --muted: #5c6773; /* muted text color */
+  --btn-bg: #f9f9f9; /* button bg */
+  --link: #646cff; /* link color */
+  --link-hover: #747bff; /* link hover color */
+  --focus-ring: #213547; /* focus ring color */
+
+  color-scheme: light; 
+}
+
+/* update link styles */ 
+a { 
+  font-weight: 500; 
+  color: var(--link);
+  text-decoration: inherit; /* inherit text decoration from parent */
 }
 a:hover {
-  color: #535bf2;
+  color: var(--link-hover);
 }
 
+/* update body styles */ 
 body {
-  margin: 0;
-  min-width: 320px;
+  margin: 0; 
+  min-width: 320px; 
+  color: var(--text);
+  background-color: var(--bg);
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 h1 {
@@ -39,7 +73,7 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: var(--btn-bg);
   cursor: pointer;
   transition: border-color 0.25s;
 }
@@ -49,17 +83,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }

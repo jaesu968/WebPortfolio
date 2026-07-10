@@ -23,7 +23,7 @@
 .site-footer {
   grid-column: 1 / -1; /* Make footer span both columns */
   width: 100%; 
-  border-top: 1px solid #444; 
+  border-top: 1px solid var(--border);
   padding-top: 1.25rem; 
 }
 
@@ -64,7 +64,7 @@
 }
 
 .read-the-docs {
-  color: #888;
+  color: var(--muted);
 }
 
 /* 
@@ -95,7 +95,7 @@
   object-fit: contain; /* This ensures the whole image is visible */
   border-radius: 8px;
   margin-bottom: 1rem;
-  background-color: #333; /* A fallback color while images load */
+  background-color: var(--surface); /* A fallback color while images load */
 }
 
 .media-trigger {
@@ -113,7 +113,7 @@
 }
 
 .media-trigger:focus-visible {
-  box-shadow: 0 0 0 3px #ffffff;
+  box-shadow: 0 0 0 3px vard(--focus-ring); 
 }
 
 .video-container {
@@ -128,7 +128,7 @@
   height: 250px; /* Same height as your images for consistency */
   object-fit: contain;
   border-radius: 8px;
-  background-color: #333;
+  background-color: var(--surface);
 }
 
 .image-gallery {
@@ -159,14 +159,14 @@
 footer {
   margin-top: 3rem;
   padding-top: 2rem;
-  border-top: 1px solid #444;
+  border-top: 1px solid var(--border); 
 }
 
 .footer-p {
   text-align: left;
   margin: 1rem 0;
   font-size: 0.9rem;
-  color: #888;
+  color: var(--muted);
 }
 
 @media (max-width: 768px) {
