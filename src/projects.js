@@ -20,6 +20,7 @@ import RedditMiniMobile from './assets/RedditMini/SmallScreen_Screenshot_RedditM
 
 
 
+
 export const projects = [
   {
     id: 1,
@@ -31,7 +32,7 @@ export const projects = [
     iosVideoUrl: iOSVideo,
     githubUrl: 'https://github.com/jaesu968/ReactNativeProject_InstagramLikeAppComplete',
     liveUrl: null, // Or link to App/Play Store
-    type: 'mobile[ios/android]'
+    type: 'mobile'
   },
   {
     id: 2,
@@ -42,7 +43,7 @@ export const projects = [
     videoUrl: ReactWebAppVideo, // Video to display the React Web App 
     githubUrl: 'https://github.com/jaesu968/jammming',
     liveUrl: null,
-    type: 'web[React]'
+    type: 'web'
   },
   {
     id: 3,
@@ -53,7 +54,7 @@ export const projects = [
     videoUrl: TipCalculatorVideo,      // Single video for web apps
     githubUrl: 'https://github.com/jaesu968/Tip_Calculator', // Add your repo URL
     liveUrl: null, // Add live demo URL if deployed
-    type: 'mobile[android]'
+    type: 'mobile'
   },
   {
     id: 4, 
@@ -64,7 +65,7 @@ export const projects = [
     videoUrl: StopwatchVideo,       // Single video for web apps
     githubUrl: 'https://github.com/jaesu968/Stopwatch_with_Productivity_Timer', // Add your repo URL
     liveUrl: null, // Add live demo URL if deployed
-    type: 'mobile[android]'
+    type: 'mobile'
   },
   {
     id: 5, 
@@ -75,7 +76,7 @@ export const projects = [
     videoUrl: FullStackVueApp, // Placeholder or actual video URL
     githubUrl: 'https://github.com/jaesu968/shopping-list', // Add your repo URL
     liveUrl: null, // Add live demo URL if deployed
-    type: 'web[MEVN full stack app]'
+    type: 'web'
   },
   {
     id: 6, 
@@ -97,7 +98,7 @@ export const projects = [
     videoUrl: oldSchoolForums, // Placeholder or actual video URL
     githubUrl: 'https://github.com/jaesu968/Final-Project',
     liveUrl: null, // Add live demo URL if deployed
-    type: 'web[HTML/CSS/JS]'
+    type: 'web'
   },
   {
     id: 8, 
@@ -108,7 +109,7 @@ export const projects = [
     videoUrl: null, // no video for this project, just an image
     githubUrl: 'https://github.com/jaesu968/QuizMaster',
     liveUrl: null, // add live demo URL if deployed
-    type: 'desktop[java]'
+    type: 'desktop'
   },
   {
     id: 9, 
@@ -119,7 +120,7 @@ export const projects = [
     videoUrl: PhotoEditor, // Placeholder or actual video URL
     githubUrl: 'https://github.com/jaesu968/PhotoEditorAndroidApp',
     liveUrl: null, // add live demo URL if deployed
-    type: 'mobile[android]'
+    type: 'mobile'
   },
   {
     id: 10, 
@@ -130,7 +131,7 @@ export const projects = [
     videoUrl: MusicPlayer, // Placeholder or actual video URL
     githubUrl: 'https://github.com/jaesu968/MusicPlayerAndroidApp',
     liveUrl: null, // add live demo URL if deployed
-    type: 'mobile[android]'
+    type: 'mobile'
   },
   {
     id: 11, 
@@ -141,6 +142,6 @@ export const projects = [
     videoUrl: null, // no video for this project, just images
     githubUrl: 'https://github.com/jaesu968/my-reddit-app',
     liveUrl: null, // add live demo URL if deployed
-    type: 'web[React]'
+    type: 'web'
   }
 ];
