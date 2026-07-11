@@ -141,7 +141,7 @@ export const projects = [
     imageUrl: [RedditMiniDesktop, RedditMiniMobile], // images for desktop and mobile views
     videoUrl: null, // no video for this project, just images
     githubUrl: 'https://github.com/jaesu968/my-reddit-app',
-    liveUrl: null, // add live demo URL if deployed
+    liveUrl: 'https://my-reddit-app-tan.vercel.app/', // add live demo URL if deployed
     type: 'web'
   }
 ];
