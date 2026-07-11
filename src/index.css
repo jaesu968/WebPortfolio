@@ -86,3 +86,40 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+.tech-tag {
+  display: inline-flex; 
+  align-items: center; 
+  gap: 0.3rem; 
+  padding: 0.25rem 0.6rem; 
+  border-radius: 8px; 
+  border: 1px solid var(--border); 
+  background-color: var(--surface);
+}
+
+.tech-stack {
+  display: flex; 
+  flex-wrap: wrap; 
+  gap: 0.5rem;
+  align-items: center; 
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;          /* full pill, distinguishes it from the square-ish tech tags */
+  border: 1px solid var(--border);
+  background-color: var(--surface);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}

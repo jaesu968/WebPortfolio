@@ -87,7 +87,7 @@ export const projects = [
     videoUrl: null, // no video for this project, just an image
     githubUrl: 'https://github.com/jaesu968/JavaCalculator', // Add your repo URL
     liveUrl: null, // Add live demo URL if deployed
-    type: 'desktop[java]'
+    type: 'desktop'
   },
   {
     id: 7, 

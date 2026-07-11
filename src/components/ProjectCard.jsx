@@ -1,4 +1,6 @@
 import React from 'react';
+import TechIcon from './TechIcon';
+import { FaGlobe, FaMobileAlt, FaDesktop } from 'react-icons/fa';
 
 /**
  * A card component that displays information about a single project.
@@ -6,7 +8,17 @@ import React from 'react';
  * @param {object} props.project - The project data object.
  * @param {(url: string, title: string) => void} props.onMediaClick - Function to call when media is clicked.
  */
+
+// list of types 
+  const typeMeta = {
+    web: { icon: FaGlobe, label: 'Web' },
+    mobile: { icon: FaMobileAlt, label: 'Mobile' },
+    desktop: { icon: FaDesktop, label: 'Desktop' },
+  }; 
+
 function ProjectCard({ project, onMediaClick }) {
+
+  
   // Check if the project has videos or an image
   const hasVideos = project.androidVideoUrl || project.iosVideoUrl || project.videoUrl;
   const isImageArray = Array.isArray(project.imageUrl);
@@ -16,9 +28,14 @@ function ProjectCard({ project, onMediaClick }) {
     { url: project.androidVideoUrl, label: `${project.title} Android demo video` },
   ].filter((item) => item.url);
 
+  const { icon: Icon, label } = typeMeta[project.type] ?? {};
+
   return (
     <div className="card">
-      <h3>{project.title} ({project.type})</h3>
+      <div className="card-header">
+        <h3>{project.title}</h3>
+        <span className="type-badge">{Icon && <Icon aria-hidden="true" />} {label}</span>
+      </div>
       {/* 
         This is conditional rendering using a ternary operator.
         - If `hasVideos` is true, it renders the video container.
@@ -76,8 +93,8 @@ function ProjectCard({ project, onMediaClick }) {
       )}
 
       <p>{project.description}</p>
-      <div>
-        <strong>Tech Stack:</strong> {project.tech.join(', ')}
+      <div className="tech-stack">
+        <strong>Tech Stack:</strong> {project.tech.map((t) => <TechIcon key={t} name={t} />)}
       </div>
       <div className="project-links">
         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">View Code</a>

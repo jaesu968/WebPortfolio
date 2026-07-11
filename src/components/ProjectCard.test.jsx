@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard.jsx';
 
 // define a reusable fake project about your tess an image-only project so can control the shape 
 const imageProject = {
-    id: 99, title: 'Test Project', type: 'web[React]',
+    id: 99, title: 'Test Project', type: 'web',
     description: 'A test description', tech: ['React', 'Vite'],
     imageUrl: '/fake/image.png', videoUrl: null, 
     githubUrl: 'https://github.com/jaesu968/test-repo', liveUrl: null
@@ -19,7 +19,8 @@ describe('renders core content', () => {
         render(<ProjectCard project={imageProject} />);
         expect(screen.getByRole('heading', { name: /Test Project/ })).toBeInTheDocument();
         expect(screen.getByText('A test description')).toBeInTheDocument(); 
-        expect(screen.getByText(/React, Vite/)).toBeInTheDocument();
+        expect(screen.getByText('React')).toBeInTheDocument();
+        expect(screen.getByText('Vite')).toBeInTheDocument();
     })
 }); 
 
