@@ -37,11 +37,11 @@ describe('view code link', () => {
 describe('live demo link', () => {
     it('has no live demo', () => {
         render(<ProjectCard project={imageProject} />);
-        expect(screen.queryByRole('link', { name: 'Live Demo' })).toBeNull();
+        expect(screen.queryByRole('link', { name: 'View It Live' })).toBeNull();
     })
     it('renders live demo when liveUrl is set', () => {
         render(<ProjectCard project={{ ...imageProject, liveUrl: 'https://example.com' }} />);
-        expect(screen.getByRole('link', { name: 'Live Demo' })).toHaveAttribute('href', 'https://example.com');
+        expect(screen.getByRole('link', { name: 'View It Live' })).toHaveAttribute('href', 'https://example.com');
     })
 });
 
