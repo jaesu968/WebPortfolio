@@ -181,3 +181,9 @@ footer {
     grid-column: 1;
   }
 }
+
+@media (min-width: 769px){
+  .resume {
+    display: none; /* hide resume link on larger screens */
+  }
+}

@@ -4,6 +4,7 @@ import { FaLinkedinIn } from 'react-icons/fa6';
 import { FaGithub } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import ThemeToggle from '../ThemeToggle.jsx';
+import resumePdf from '../../assets/Resume/KJA_AndroidDevResumeJuly2026V2.pdf';
 
 // this component is for the sidebar content 
 // so Name, Current Job Title, and one sentence about myself, 
@@ -127,6 +128,13 @@ const Sidebar = () => {
                     </li>
                 </ul>
             </div>
+            <div className="sidebar-contact">
+                <p className="sidebar-location">Chicago, IL, USA</p>
+                <a className="sidebar-email" href="mailto:mazterk968@gmail.com">mazterk968@gmail.com</a>
+            </div>
+            <a className="resume-link" href={resumePdf} target="_blank" rel="noopener noreferrer">
+                View Resume
+            </a>
         </aside>
     )
 }

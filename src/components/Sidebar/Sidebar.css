@@ -1,7 +1,5 @@
 /* Styling for Sidebar component */ 
-.sidebar {
-  background: var(--bg); 
-}
+
 
 /* navbar styling */ 
 
@@ -61,6 +59,28 @@
   border-radius: 4px; /* Optional: Add rounded corners to the focus outline */
 }
 
+/* compoact contact info under the social icons (desktop sidebar) */
+.sidebar-contact {
+  margin: 1.25rem; 
+  font-size: 0.85rem; 
+  color: var(--muted);
+}
+
+.sidebar-location {
+  margin: 0 0 0.25rem 0; 
+}
+
+.sidebar-email {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+.sidebar-email:hover, 
+.sidebar-email:focus-visible {
+  color: var(--link-hover); 
+  text-decoration: underline;
+}
+
 /* social icons row */ 
 .social-links {
   margin-top: 1.5rem; /* Add spacing above the social links */
@@ -98,6 +118,7 @@
 
 
 .sidebar {
+    background: var(--bg); 
     text-align: left;
     margin-right: 2rem;
     flex: 1;
@@ -110,6 +131,36 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+.resume-link {
+  display: inline-block; 
+  margin-top: 1.25rem; 
+  padding: 0.45rem 1rem; 
+  border: 1px solid var(--border);
+  border-radius: 8px; 
+  color: inherit; 
+  text-decoration: none; 
+  font-weight: 500;
+  transition: background-color 150ms ease, color 150ms ease; 
+}
+
+.resume-link:hover{
+  border-color: #9fa3e5aa;
+  color: #9fa3e5aa;
+}
+
+/* sidebar-scale headings: the global h1/h2 sizes are for section titles */ 
+.sidebar h1 {
+  font-size: 2.5rem; 
+  line-height: 1.2; 
+  margin: 0; 
+}
+
+.sidebar h2 {
+  font-size: 1rem; 
+  font-weight: 500; 
+  color: var(--muted);
+  margin: 0.35rem 0 0.75rem; 
+}
 
 @media (max-width: 768px) {
   .sidebar {
@@ -124,10 +175,11 @@
     border-radius: 0; 
     border-bottom: 1px solid var(--border);
     padding: 0.6rem 1rem; 
-    display: flex; 
+    display: flex;
     align-items: center;
     gap: 0.5rem; /* Add spacing between items */
-    flex-wrap: nowrap; /* Prevent wrapping */
+    flex-wrap: wrap; /* allow the bar to break into two rows */
+    row-gap: 0.4rem; /* vertical spacing between the two rows */
   }
 
   /*  hide the tall intro content so the bar stays small */ 
@@ -137,14 +189,19 @@
   }
 
   .sidebar h1 {
-    font-size: 1rem; 
-    margin: 0; 
+    font-size: 1rem;
+    margin: 0;
+    flex: 1 1 auto; /* name fills row one, pushing the theme toggle right and the nav to row two */
   }
 
-  /* nav links go horizontal */ 
+  /* nav links go horizontal, on their own full-width second row */
+  .sidebar nav {
+    order: 5; /* after the social icons, so name + toggle + icons share row one */
+    flex: 1 1 100%;
+  }
   .sidebar-nav {
-    display: flex; 
-    gap: 0.75rem; 
+    display: flex;
+    gap: 0.75rem;
   }
   .sidebar-nav li + li {
     margin-top: 0; 
@@ -157,8 +214,24 @@
   }
   
   .social-links {
-    margin-top: 0; 
-    margin-left: auto; /* push icons to the right edge */ 
+    margin-top: 0;
+    margin-left: auto; /* push icons to the right edge */
+  }
+
+  /* smaller icons keep the second row short */
+  .social-links-list a {
+    width: 1.9rem;
+    height: 1.9rem;
+    font-size: 1rem;
+  }
+
+  /* take contact information off of sidebar on mobile */ 
+  .sidebar-contact {
+    display: none; 
+  }
+  /* don't show resume link on mobile */
+  .resume-link {
+    display: none; 
   }
 }
 
