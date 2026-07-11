@@ -44,6 +44,11 @@
   color-scheme: light;
 }
 
+/* anchor jumps will land under the bar */ 
+#about, #experience, #projects {
+  scroll-margin-top: 4rem;
+}
+
 /* update link styles */ 
 a { 
   font-weight: 500; 

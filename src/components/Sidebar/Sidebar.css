@@ -1,4 +1,7 @@
 /* Styling for Sidebar component */ 
+.sidebar {
+  background: var(--bg); 
+}
 
 /* navbar styling */ 
 
@@ -112,8 +115,47 @@
   .sidebar {
     max-width: 100%;
     margin-right: 0;
-    position: static;
-    top: auto;
+    position: sticky; /* Keep the sidebar sticky on smaller screens */
+    top: 0; /* Align the sidebar to the top */
+    z-index: 100; /* stay above the content scrolling beneath */ 
+    background: var(--bg); /* Solid background so content doesn't show through */
+    border-radius: 0; 
+    border-bottom: 1px solid var(--border);
+    padding: 0.6rem 1rem; 
+    display: flex; 
+    align-items: center;
+    gap: 1rem; /* Add spacing between items */
+  }
+
+  /*  hide the tall intro content so the bar stays small */ 
+  .sidebar h2, 
+  .sidebar p {
+    display: none; 
+  }
+
+  .sidebar h1 {
+    font-size: 1rem; 
+    margin: 0; 
+  }
+
+  /* nav links go horizontal */ 
+  .sidebar-nav {
+    display: flex; 
+    gap: 1rem; 
+  }
+  .sidebar-nav li + li {
+    margin-top: 0; 
+  }
+  .nav-link {
+    padding-left: 0; /* no room for the leading-line effect */ 
+  }
+  .nav-link::before {
+    display: none; /* hide the leading-line effect */
+  }
+  
+  .social-links {
+    margin-top: 0; 
+    margin-left: auto; /* push icons to the right edge */ 
   }
 }
 
