@@ -97,7 +97,7 @@ export const projects = [
     imageUrl: '', // Placeholder or actual image URL
     videoUrl: oldSchoolForums, // Placeholder or actual video URL
     githubUrl: 'https://github.com/jaesu968/Final-Project',
-    liveUrl: null, // Add live demo URL if deployed
+    liveUrl: 'https://jaesu968.github.io/Final-Project/', // Add live demo URL if deployed
     type: 'web'
   },
   {
