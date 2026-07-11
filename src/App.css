@@ -87,6 +87,9 @@
   .project-grid {
     grid-template-columns: repeat(1, 1fr);
   }
+  #root {
+    padding: 1rem 0.75rem; /* make content more compact on smaller screens */
+  }
 }
 
 .project-image {

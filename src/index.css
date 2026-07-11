@@ -46,7 +46,7 @@
 
 /* anchor jumps will land under the bar */ 
 #about, #experience, #projects {
-  scroll-margin-top: 4rem;
+  scroll-margin-top: 5.5rem; /* add space for the nav bar */
 }
 
 /* update link styles */ 
