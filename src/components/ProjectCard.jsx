@@ -99,7 +99,7 @@ function ProjectCard({ project, onMediaClick }) {
       <div className="project-links">
         <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">View Code</a>
         {project.liveUrl && (
-          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="live-demo-link">Live Demo</a>
+          <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="live-demo-link">View It Live</a>
         )}
       </div>
     </div>
