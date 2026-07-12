@@ -5,7 +5,7 @@ A personal portfolio built with React and Vite to showcase web, mobile, and desk
 🔗 **Live site:** [https://jaesu968.github.io/WebPortfolio](https://jaesu968.github.io/WebPortfolio)
 
 
-![Portfolio screenshot](src/assets/TopScreenshot.JPG)
+![Portfolio screenshot](src/assets/TopScreenshot1.JPG)
 
 
 ## Tech Stack
