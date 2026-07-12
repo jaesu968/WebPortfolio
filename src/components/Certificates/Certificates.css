@@ -1,0 +1,32 @@
+/* styling for certificates component */ 
+.certificates {
+    color: var(--text); 
+    border-radius: 5px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* grid so multiple certificates flow side by side later */ 
+.certificates-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    justify-items: center;
+}
+
+.certificate-item {
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.certificate-item h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.certificate-image {
+    width: 100%;
+    height: 250px; /* match .project-image so cards look consistent */
+    object-fit: contain; /* keeps the whole certificate visible */
+    border-radius: 8px;
+    background-color: var(--surface); /* fallback color while loading, same as project images */
+}

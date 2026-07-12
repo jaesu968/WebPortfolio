@@ -19,7 +19,7 @@ const Sidebar = () => {
 
     useEffect(() => {
         // Keep section IDs centralized so hash handling and scroll logic stay in sync.
-        const sectionIds = ['about', 'experience', 'projects'];
+        const sectionIds = ['about', 'experience', 'projects', 'certificates'];
         const getSections = () =>
             sectionIds
                 .map((id) => document.getElementById(id))
@@ -102,6 +102,15 @@ const Sidebar = () => {
                             aria-current={activeSection === 'projects' ? 'location' : undefined}
                         >
                             Projects
+                        </a>
+                    </li>
+                    <li>
+                        <a 
+                            href="#certificates"
+                            className={`nav-link ${activeSection === 'certificates' ? 'active' : ''}`}
+                            aria-current={activeSection === 'certificates' ? 'location' : undefined}
+                            >
+                                Certificates
                         </a>
                     </li>
                 </ul>
