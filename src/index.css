@@ -45,13 +45,13 @@
 }
 
 /* keep anchor jumps from landing flush against the top of the viewport */
-#about, #experience, #projects {
+#about, #experience, #projects, #certificates {
   scroll-margin-top: 1.5rem;
 }
 
 /* on mobile the sticky bar is two rows tall, so leave room for it plus breathing space */
 @media (max-width: 768px) {
-  #about, #experience, #projects {
+  #about, #experience, #projects, #certificates {
     scroll-margin-top: 7rem;
   }
 }
