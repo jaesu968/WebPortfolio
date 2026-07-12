@@ -7,6 +7,7 @@ import Modal from './components/Modal.jsx';
 import Resume from './components/Resume.jsx'; // Importing the Resume component
 import Sidebar from './components/Sidebar/Sidebar.jsx'; // Importing the Sidebar component
 import Experience from './components/Experience/Experience.jsx'; // Importing the Experience component
+import Certificates from './components/Certificates/Certificates.jsx'; // Importing the Certificates component
 
 /**
  * The main application component.
@@ -84,6 +85,10 @@ function App() {
         mediaUrl={modalContent?.url}
         title={modalContent?.title}
       />
+      </div>
+      
+      <div id="certificates">
+        <Certificates onMediaClick={openModal} />
       </div>
 
       <Resume /> {/* Rendering the Resume component to display the resume section */}
