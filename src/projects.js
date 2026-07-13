@@ -16,7 +16,7 @@ import PhotoEditor from './assets/PhotoEditorApp/PhotoEditorAndroidAppScreenReco
 import MusicPlayer from './assets/MusicPlayerApp/MusicPlayerAndroidAppScreenRecording.mp4'; // added video for music player app project 
 import RedditMiniDesktop from './assets/RedditMini/DesktopScreenshotRedditMini.jpg'; // added screenshot for Reddit Mini desktop Java project
 import RedditMiniMobile from './assets/RedditMini/SmallScreen_Screenshot_RedditMini.jpg'; // added screenshot for Reddit Mini mobile Java project
-import RestaurantMenuApp from '/Users/jaesu/Documents/WebPortfolio/src/assets/RestaurantMenuApp/RestaurantMenuAppScreenRecording.mp4'; // added video for Restaurant Menu App project
+import RestaurantMenuApp from './assets/RestaurantMenuApp/RestaurantMenuAppScreenRecording.mp4'; // added video for Restaurant Menu App project
 
 
 
