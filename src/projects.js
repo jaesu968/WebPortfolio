@@ -16,6 +16,7 @@ import PhotoEditor from './assets/PhotoEditorApp/PhotoEditorAndroidAppScreenReco
 import MusicPlayer from './assets/MusicPlayerApp/MusicPlayerAndroidAppScreenRecording.mp4'; // added video for music player app project 
 import RedditMiniDesktop from './assets/RedditMini/DesktopScreenshotRedditMini.jpg'; // added screenshot for Reddit Mini desktop Java project
 import RedditMiniMobile from './assets/RedditMini/SmallScreen_Screenshot_RedditMini.jpg'; // added screenshot for Reddit Mini mobile Java project
+import RestaurantMenuApp from '/Users/jaesu/Documents/WebPortfolio/src/assets/RestaurantMenuApp/RestaurantMenuAppScreenRecording.mp4'; // added video for Restaurant Menu App project
 
 
 
@@ -143,5 +144,16 @@ export const projects = [
     githubUrl: 'https://github.com/jaesu968/my-reddit-app',
     liveUrl: 'https://my-reddit-app-tan.vercel.app/', // add live demo URL if deployed
     type: 'web'
+  }, 
+  {
+    id: 12, 
+    title: 'Restaurant Menu App',
+    description: 'An mobile restaurant menu Android Application built using Kotlin and Jetpack Compose, offering a user-friendly interface for browsing and ordering food items.',
+    tech: ['Kotlin', 'Jetpack Compose', 'IntelliJ'],
+    imageUrl: '', // Placeholder or actual image URL
+    videoUrl: RestaurantMenuApp, // Placeholder or actual video URL
+    githubUrl: 'https://github.com/jaesu968/RestaurantMenuApp',
+    liveUrl: null, // add live demo URL if deployed
+    type: 'mobile'
   }
 ];
