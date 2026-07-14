@@ -162,6 +162,11 @@
   margin: 0.35rem 0 0.75rem; 
 }
 
+/* not showing mobile title for Certs and Resume section on desktop */ 
+.nav-label-mobile {
+  display: none; 
+}
+
 @media (max-width: 768px) {
   .sidebar {
     max-width: 100%;
@@ -233,6 +238,14 @@
   .resume-link {
     display: none; 
   }
+  /* show mobile title for Cert and Resume but not desktop one */ 
+  .nav-label-desktop {
+    display: none; 
+  }
+  .nav-label-mobile {
+    display: inline; 
+  }
+
 }
 
 .theme-toggle {

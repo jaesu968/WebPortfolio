@@ -110,7 +110,8 @@ const Sidebar = () => {
                             className={`nav-link ${activeSection === 'certificates' ? 'active' : ''}`}
                             aria-current={activeSection === 'certificates' ? 'location' : undefined}
                             >
-                                Certificates
+                                <span className="nav-label-desktop">Certificates</span>
+                                <span className="nav-label-mobile">Certs and Resume</span>
                         </a>
                     </li>
                 </ul>
