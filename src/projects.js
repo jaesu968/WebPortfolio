@@ -17,6 +17,7 @@ import MusicPlayer from './assets/MusicPlayerApp/MusicPlayerAndroidAppScreenReco
 import RedditMiniDesktop from './assets/RedditMini/DesktopScreenshotRedditMini.jpg'; // added screenshot for Reddit Mini desktop Java project
 import RedditMiniMobile from './assets/RedditMini/SmallScreen_Screenshot_RedditMini.jpg'; // added screenshot for Reddit Mini mobile Java project
 import RestaurantMenuApp from './assets/RestaurantMenuApp/RestaurantMenuAppScreenRecording.mp4'; // added video for Restaurant Menu App project
+import ShoppingListAndroid from './assets/ShoppingListAndroid/ScreenRecordingShoppingListApp.mp4';// added video for Shopping List Android project
 
 
 
@@ -50,7 +51,7 @@ export const projects = [
     id: 3,
     title: 'Tip Calculator',
     description: 'This project is a simple yet functional Tip Calculator application for Android, built using Kotlin. It provides a user-friendly interface to quickly calculate the appropriate tip for a bill.',
-    tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Java'],
+    tech: ['Kotlin', 'XML Layouts', 'Java'],
     imageUrl: TipCalculatorScreenshot, // Used as poster for video
     videoUrl: TipCalculatorVideo,      // Single video for web apps
     githubUrl: 'https://github.com/jaesu968/Tip_Calculator', // Add your repo URL
@@ -61,7 +62,7 @@ export const projects = [
     id: 4, 
     title: 'Stopwatch with Productivity Timer',
     description: 'This is a custom-built Android application that functions as a stopwatch with an added productivity feature inspired by the Pomodoro technique. The main idea is to allow users to time their work intervals and get a notification when a self-imposed time limit is reached, reminding them to take a break.',
-    tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Java'],
+    tech: ['Kotlin', 'XML Layouts', 'Java'],
     imageUrl: StopwatchScreenshot, // Used as poster for video
     videoUrl: StopwatchVideo,       // Single video for web apps
     githubUrl: 'https://github.com/jaesu968/Stopwatch_with_Productivity_Timer', // Add your repo URL
@@ -81,6 +82,17 @@ export const projects = [
   },
   {
     id: 6, 
+    title: `Shopping List Android App`,
+    description: `A native Android port of my Vue shopping-list web app, built with Kotlin and Jetpack Compose. It acts as a second client of the same REST API, using Retrofit for networking and an MVVM architecture (ViewModel + StateFlow) with explicit loading, success, and error states. Backed by unit and UI tests.`,
+    tech: ['Kotlin', 'Jetpack Compose', 'MVVM', 'Retrofit', 'Coroutines', 'REST API', 'JUnit'],
+    imageUrl: '', // Placeholder or actual image URL
+    videoUrl: ShoppingListAndroid, // Placeholder or actual video URL
+    githubUrl: 'https://github.com/jaesu968/ShoppingListAndroidApp',
+    liveUrl: null, // add live demo URL if deployed
+    type: 'mobile'
+  },
+  {
+    id: 7, 
     title: 'Java Calculator',
     description: 'A simple calculator app made using Java.',
     tech: ['Java', 'JavaFX'],
@@ -91,7 +103,7 @@ export const projects = [
     type: 'desktop'
   },
   {
-    id: 7, 
+    id: 8, 
     title: 'Old School Forums Website',
     description: 'This project is a multi-page "old school" themed social media and forum website, created as a final project for an introductory web development course. It demonstrates foundational skills in HTML, CSS, and JavaScript to build a responsive and interactive user experience.',
     tech: ['HTML', 'CSS', 'JavaScript'],
@@ -102,7 +114,7 @@ export const projects = [
     type: 'web'
   },
   {
-    id: 8, 
+    id: 9, 
     title: 'Java Quiz Master',
     description: 'Quiz Master is a console-based Java application that allows users to both manage a collection of quiz questions and take quizzes. It features a persistent storage system, saving all questions to a local text file (`QuizQuestions.txt`).',
     tech: ['Java'],
@@ -113,10 +125,10 @@ export const projects = [
     type: 'desktop'
   },
   {
-    id: 9, 
+    id: 10, 
     title: 'Photo Editor App',
     description: 'A mobile photo editing Android application built with Kotlin, offering a variety of filters and editing tools for users to enhance their photos on the go.',
-    tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Java', 'SQLite'],
+    tech: ['Kotlin', 'XML Layouts', 'Java', 'SQLite'],
     imageUrl: '', // Placeholder or actual image URL
     videoUrl: PhotoEditor, // Placeholder or actual video URL
     githubUrl: 'https://github.com/jaesu968/PhotoEditorAndroidApp',
@@ -124,10 +136,10 @@ export const projects = [
     type: 'mobile'
   },
   {
-    id: 10, 
+    id: 11, 
     title: 'Music Player App',
     description: 'A mobile music player Android application built with Kotlin, allowing users to play their local music files with a simple and intuitive interface.',
-    tech: ['Kotlin', 'Android Studio', 'XML Layouts', 'Kotlin Coroutines', 'Java'],
+    tech: ['Kotlin', 'XML Layouts', 'Kotlin Coroutines', 'Java'],
     imageUrl: '', // Placeholder or actual image URL
     videoUrl: MusicPlayer, // Placeholder or actual video URL
     githubUrl: 'https://github.com/jaesu968/MusicPlayerAndroidApp',
@@ -135,7 +147,7 @@ export const projects = [
     type: 'mobile'
   },
   {
-    id: 11, 
+    id: 12, 
     title: 'Reddit Mini',
     description: `A Reddit-style client built with React, Vite, Redux Toolkit, React Router, and Bootstrap. Browse Reddit's popular posts, explore subreddits, read comments, and search content — all in a responsive, animated UI.`,
     tech: ['React', 'Vite', 'CSS', 'HTML', 'JavaScript'],
@@ -146,10 +158,10 @@ export const projects = [
     type: 'web'
   }, 
   {
-    id: 12, 
+    id: 13,
     title: 'Restaurant Menu App',
-    description: 'An mobile restaurant menu Android Application built using Kotlin and Jetpack Compose, offering a user-friendly interface for browsing and ordering food items.',
-    tech: ['Kotlin', 'Jetpack Compose', 'IntelliJ'],
+    description: 'A mobile restaurant menu Android application built using Kotlin and Jetpack Compose, offering a user-friendly interface for browsing and ordering food items.',
+    tech: ['Kotlin', 'Jetpack Compose'],
     imageUrl: '', // Placeholder or actual image URL
     videoUrl: RestaurantMenuApp, // Placeholder or actual video URL
     githubUrl: 'https://github.com/jaesu968/RestaurantMenuApp',

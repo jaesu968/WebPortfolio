@@ -4,7 +4,7 @@ import { FaLinkedinIn } from 'react-icons/fa6';
 import { FaGithub } from 'react-icons/fa';
 import { HiOutlineMail } from 'react-icons/hi';
 import ThemeToggle from '../ThemeToggle.jsx';
-import resumePdf from '../../assets/Resume/KJA_AndroidDevResumeJuly2026V2.pdf';
+import resumePdf from '../../assets/Resume/KJA_Resume.pdf';
 
 // this component is for the sidebar content 
 // so Name, Current Job Title, and one sentence about myself, 

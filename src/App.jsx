@@ -42,15 +42,18 @@ function App() {
       <main className="content-column">
         <div id="about"> 
           <h1 className="centerTitle">About Me</h1> 
-          <p>Hello Everyone. Welcome to my Web Portfolio.</p>
-          <p>I am a web and mobile developer. 
-            I have experience working with React, Node.js, ExpressJS, MongoDB,
-            Vue.js, Kotlin, Java, Android Studio and React Native. 
-            I also have knowledge of HTML5, CSS3, JavaScript. 
-            I recently completed the Android Development with Kotlin certificate from Hyperskill. 
-            And my next step will be to learn Jetpack Compose for modern Android development and perhaps Flutter.
-            Feel free to contact me if you need any help or want to work together.
-            Thank You!
+          <p>
+            I'm Kyle, a web and mobile developer who builds full-stack apps and native Android experiences.
+          </p>
+          <p>
+            I work across the stack with React, Node.js, Express, and MongoDB on the web, and Kotlin with
+            Jetpack Compose for Android &mdash; recently rebuilding my Shopping List app as a fully native
+            Android version. I'm also comfortable with Vue.js, React Native, Java, and the fundamentals of
+            HTML5, CSS3, and JavaScript.
+          </p>
+          <p>
+            I'm currently looking for a web or mobile developer role. Feel free to reach out &mdash; I'd love
+            to hear about what you're building.
           </p>
       </div>
 
